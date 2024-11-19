@@ -51,7 +51,7 @@ const AppLayout = () => WrappedComponent => {
               sx={{
                 display: { xs: "none", md: "block" },
                 padding: "2rem",
-                bgcolor: "rgba(180, 70, 70, 0.9)",
+                bgcolor: "#1F2937",
               }} 
             >
               <Profile />

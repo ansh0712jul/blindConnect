@@ -14,7 +14,7 @@ const Profile = ({ user }) => {
     <Stack spacing={"2rem"} direction={"column"} alignItems={"center"}>
       <Avatar
         // src={transformImage(user?.avatar?.url)}
-        src='https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png'
+        src="../../public/anonymous.jpeg"
         sx={{
           width: 200,
           height: 200,

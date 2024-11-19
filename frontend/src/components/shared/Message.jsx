@@ -1,7 +1,9 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React, { memo } from 'react'
 // import {motion} from "framer-motion"
 import moment from 'moment';
+import { fileformat } from '../../lib/features';
+import Attatchment from './Attatchment';
 
     
 const Message = ({message,user}) => {
@@ -14,8 +16,8 @@ const Message = ({message,user}) => {
       whileInView={{ opacity: 1, x: 0 }}
       style={{
         alignSelf: sameSender ? "flex-end" : "flex-start",
-        backgroundColor: "white",
-        color: "black",
+        backgroundColor:sameSender? "#ea7070":"#B2BACC",
+        color: sameSender?"white":"black",
         borderRadius: "5px",
         padding: "0.5rem",
         width: "fit-content",
@@ -27,8 +29,20 @@ const Message = ({message,user}) => {
         </Typography>
       )}
        {content && <Typography>{content}</Typography>}
+       {
+        attachments.length > 0 && attachments.map((attachment,index) => {
+          const url=attachment.url
+          const file= fileformat(url)
+          return <Box key={index}>
+            <a href={url} target='_blank' download={true} style={{
+              color: "white",
+            }}>
+               {Attatchment(file, url)}
+            </a>
+          </Box>
 
-
+        } )
+       }
        <Typography variant="caption" color={"text.secondary"}>
         {timeAgo}
       </Typography>

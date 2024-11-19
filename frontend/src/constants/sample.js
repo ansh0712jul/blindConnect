@@ -1,7 +1,7 @@
 
 export const sampleChats = [
     {
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
       name: "anonymous user",
       _id: "1",
       groupChat: false,
@@ -9,66 +9,54 @@ export const sampleChats = [
     },
   
     {
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "2",
       groupChat: true,
       members: ["1", "2"],
     },
     {
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "3",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "4",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "5",
       groupChat: true,
       members: ["1", "2"],
     },
     {
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "6",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
+      avatar: ["../../public/anonymous.jpeg"],
         name: "anonymous user",
       _id: "7",
       groupChat: true,
       members: ["1", "2"],
-    },{
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
-        name: "anonymous user",
-      _id: "8",
-      groupChat: true,
-      members: ["1", "2"],
-    },{
-      avatar: ["https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png"],
-        name: "anonymous user",
-      _id: "9",
-      groupChat: true,
-      members: ["1", "2"],
-    },
+    }
   ];
   
   export const sampleUsers = [
     {
-      avatar: "https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png",
+      avatar: "../../public/anonymous.jpeg",
         name: "anonymous user",
       _id: "1",
     },
     {
-      avatar: "https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png",
+      avatar: "../../public/anonymous.jpeg",
         name: "anonymous user",
       _id: "2",
     },
@@ -94,11 +82,11 @@ export const sampleChats = [
   export const sampleMessage = [
     {
       attachments: [],
-      content: "L*uda ka Message hai",
+      content: "hey!! how are you ?",
       _id: "sfnsdjkfsdnfkjsbnd",
       sender: {
         _id: "user._id",
-        name: "Chaman ",
+        name: "anonymous ",
       },
       chat: "chatId",
       createdAt: "2024-11-14T10:41:30.630Z",
@@ -111,14 +99,25 @@ export const sampleChats = [
           url: "https://www.w3schools.com/howto/img_avatar.png",
         },
       ],
-      content: "hello bhai keso ho ",
+      content: "hello!, I am fine and you ?",
       _id: "sfnsdjkfsdnfkdddjsbnd",
       sender: {
         _id: "sdfsdfsdf",
-        name: "Chaman  2",
+        name: "anonymous",
       },
       chat: "chatId",
       createdAt: "2024-11-14T11:41:30.630Z",
+    },
+    {
+      attachments: [],
+      content: "great",
+      _id: "sfnsdjkfsdnfkjsbnd",
+      sender: {
+        _id: "user._id",
+        name: "anonymous ",
+      },
+      chat: "chatId",
+      createdAt: "2024-11-14T10:41:30.630Z",
     },
   ];
   
@@ -133,7 +132,7 @@ export const sampleChats = [
         groups: 5,
       },
       {
-          name: "anonymous user",
+        name: "anonymous user",
         avatar: "https://www.w3schools.com/howto/img_avatar.png",
         _id: "2",
         username: "john_boi",

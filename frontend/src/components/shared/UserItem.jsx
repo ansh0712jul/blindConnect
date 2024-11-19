@@ -8,7 +8,7 @@ const UserItem = ({
   handlerIsLoading,
   isAdded=false
 }) => {
-  const { name, _id, avatar } = user;
+  const { name, _id } = user;
 
   return (
     <ListItem >
@@ -19,7 +19,7 @@ const UserItem = ({
         width={"100%"}
         
       >
-        <Avatar src={avatar} alt={name} />
+        {/* <Avatar  /> */}
         <Typography
           variant="body1"
           sx={{

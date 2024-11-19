@@ -10,6 +10,7 @@ import AppLayout from "../components/layout/AppLayout";
 import { InputBox } from "../components/styles/StyledComponent";
 import { sampleMessage } from "../constants/sample";
 import Message from "../components/shared/Message";
+import FileMenu from "../components/dialog/FileMenu";
 
 const user={
   _id:"sdfsdfsdf",
@@ -17,6 +18,7 @@ const user={
 }
 const Chat = () => {
   const Contref=useRef(null)
+ 
   return (
     <>
     <Stack ref={Contref}boxSizing={"border-box"}
@@ -31,7 +33,7 @@ const Chat = () => {
     >
       {
         sampleMessage.map((i) =>(
-          <Message message={i} user={user} />
+          <Message key={i._id} message={i} user={user} />
         ))
       }
     </Stack>
@@ -48,6 +50,7 @@ const Chat = () => {
               rotate: "30deg",
             }}
             // onClick={handleFileOpen}
+           
           >
             <AttachFileIcon />
           </IconButton>
@@ -75,7 +78,7 @@ const Chat = () => {
           </IconButton>
         </Stack>
     </form>
-    {/* <FileMenu/> */}
+    <FileMenu />
     </>
   )
   
