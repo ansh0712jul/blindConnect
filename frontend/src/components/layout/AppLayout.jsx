@@ -27,12 +27,12 @@ const AppLayout = () => WrappedComponent => {
       <>
         <Title />
         <Header toggleProfile={toggleProfile} />
-        <Grid container height={"calc(100vh - 4rem)"}>
+        <Grid container height={"calc(100vh - 4rem)"} bgcolor={"#1F2937"}>
           <Grid item sm={4} md={3} 
               sx={{
                 display: { xs: "none", sm: "block" },
               }} height={"100%"} >
-            <ChatList chats={sampleChats} chatId={chatId}
+            <ChatList  bgcolor={"#1F2937"} chats={sampleChats} chatId={chatId}
               handleDeleteChat={handleDeleteChat}
             />
           </Grid>

@@ -1,10 +1,15 @@
-import { Done, Edit, KeyboardBackspace, Menu } from '@mui/icons-material'
-import { Box, Button, Drawer, Grid, IconButton,  Stack,  TextField,  Tooltip, Typography } from '@mui/material'
-import React, { useState,memo, useEffect } from 'react'
+import { Add, Delete, Done, Edit, KeyboardBackspace, Menu } from '@mui/icons-material'
+import { Backdrop, Box, Button, Drawer, Grid, IconButton,  Stack,  TextField,  Tooltip, Typography } from '@mui/material'
+import React, { useState,memo, useEffect, Suspense, lazy } from 'react'
 import {  useNavigate,useSearchParams } from 'react-router-dom'
 import {Link} from "../components/styles/StyledComponent"
 import AvtarCard from '../components/shared/AvtarCard'
-import { sampleChats } from '../constants/sample'
+import { sampleChats, sampleUsers } from '../constants/sample'
+import ConfirmDeleteDialog from '../components/dialog/ConfirmDeleteDialog'
+import AddMemberDialog from '../components/dialog/AddMemberDialog'
+import UserItem from '../components/shared/UserItem'
+
+const isAddMember=false;
 const Group = () => {
 
   const [isMobileMenuOpen,setMobileMenuOpen]=useState(false)
@@ -17,17 +22,41 @@ const Group = () => {
   const handleMoblie = () => { setMobileMenuOpen((prev) => !prev) } 
   const handleMobileClose = () =>  setMobileMenuOpen(false) 
  const [isEdit,setIsetEdit]=useState(false)
+ const [confirmDeleteDialog,setConfirmDeleteDialog]=useState(false)
 
  const [groupName,setGroupName]=useState("")
  const [groupNameUpdatedValue,setGroupNameUpdatedValue]=useState("")
+
+ const openAddMemberHandler=()=>{
+   console.log("add member")
+ }
+ const openConfirmDeleteHandler=()=>{
+  setConfirmDeleteDialog(true)
+   console.log("delete group")
+   
+ }
+
+const closeConfirmDeleteHandler=()=>{
+  setConfirmDeleteDialog(false)
+}
   const updateGroupName=()=>{
     setIsetEdit(false)
     console.log(groupNameUpdatedValue)
   }  
 
+  const deleteHandler=()=>{
+    console.log("delete handler")
+  }
+
+  const removeMemberHandler=(id)=>{
+    console.log(`remove member : ${id}`)
+  }
+
   useEffect(() => {
-    setGroupName(`Group Name ${chatId}`)
-    setGroupNameUpdatedValue(`Group Name ${chatId}`)
+    if(chatId){
+      setGroupName(`Group Name ${chatId}`)
+      setGroupNameUpdatedValue(`Group Name ${chatId}`)
+    }
 //  reseting the values
     return () => {
       setGroupName("")
@@ -135,10 +164,20 @@ const Group = () => {
                 md: "1rem 4rem",
               }}
               spacing={"2rem"}
-              bgcolor={"bisque"}
               height={"50vh"}
               overflow={"auto"}
-            ></Stack>
+            >
+             {
+               sampleUsers.map(i => (
+                <UserItem user={i} key={i._id} isAdded styling={{
+                  boxShadow: "0 0 0.5rem  rgba(0,0,0,0.2)",
+                  padding: "1rem 2rem",
+                  borderRadius: "0.5rem",
+                }}
+                handler={removeMemberHandler}
+                />))
+             }
+            </Stack>
             {/*  button  */}
             <Stack direction={{
                 xs: "column-reverse",
@@ -150,13 +189,27 @@ const Group = () => {
                 sm: "1rem",
                 md: "1rem 4rem",
               }}>
-              <Button> Add member</Button>
-              <Button>delete member</Button>
+              <Button variant='outlined' color='error' startIcon={<Delete/>} onClick={openConfirmDeleteHandler}> Delete Group</Button>
+              <Button variant='contained' startIcon={<Add/>} onClick={openAddMemberHandler}>Add Member</Button>
             </Stack>
             </>
           )}
 
         </Grid>
+        {
+          isAddMember && <Suspense fallback={<Backdrop open />}>
+            <AddMemberDialog/>
+          </Suspense>
+        }
+        {confirmDeleteDialog && (
+        <Suspense fallback={<Backdrop open />}>
+          <ConfirmDeleteDialog
+            open={confirmDeleteDialog}
+            handleClose={closeConfirmDeleteHandler}
+            deleteHandler={deleteHandler}
+          />
+        </Suspense>
+      )}
 
 
         <Drawer sx={{

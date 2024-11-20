@@ -1,7 +1,7 @@
 
 export const sampleChats = [
     {
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
       name: "anonymous user",
       _id: "1",
       groupChat: false,
@@ -9,39 +9,39 @@ export const sampleChats = [
     },
   
     {
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "2",
       groupChat: true,
       members: ["1", "2"],
     },
     {
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "3",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "4",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "5",
       groupChat: true,
       members: ["1", "2"],
     },
     {
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "6",
       groupChat: true,
       members: ["1", "2"],
     },{
-      avatar: ["../../public/anonymous.jpeg"],
+      avatar: ["/anonymous.jpeg"],
         name: "anonymous user",
       _id: "7",
       groupChat: true,
@@ -51,16 +51,16 @@ export const sampleChats = [
   
   export const sampleUsers = [
     {
-      avatar: "../../public/anonymous.jpeg",
-        name: "anonymous user",
+      avatar: "/anonymous.jpeg",
+        bio: "MERN JAVA JS TS MICROSOFT ",
       _id: "1",
     },
     {
-      avatar: "../../public/anonymous.jpeg",
-        name: "anonymous user",
+      avatar: "/anonymous.jpeg",
+        bio: "REACt.js, nextjs webRtc GOOGLE ",
       _id: "2",
     },
-  ];
+  ]; 
   
   export const sampleNotifications = [
     {

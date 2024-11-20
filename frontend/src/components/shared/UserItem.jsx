@@ -6,9 +6,10 @@ const UserItem = ({
   user,
   handler,
   handlerIsLoading,
-  isAdded=false
+  isAdded=false,
+  styling={}
 }) => {
-  const { name, _id } = user;
+  const { name, _id,bio } = user;
 
   return (
     <ListItem >
@@ -17,9 +18,25 @@ const UserItem = ({
         alignItems={"center"}
         spacing={"1rem"}
         width={"100%"}
+        {...styling}
         
       >
-        {/* <Avatar  /> */}
+        <Avatar  />
+        <Typography
+          variant="body1"
+          sx={{
+            flexGrow: 1,
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            width: "100%",
+            fontSize:"0.8rem"
+          }}
+        >
+          {bio}
+        </Typography>
         <Typography
           variant="body1"
           sx={{
