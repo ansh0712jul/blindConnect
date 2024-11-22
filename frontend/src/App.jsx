@@ -2,6 +2,7 @@ import React,{lazy, Suspense} from 'react'
 import {Route,BrowserRouter,Routes} from "react-router-dom"
 import ProtectRoute from './components/auth/ProtectRoute'
 import Loaders from './components/layout/Loaders'
+import { Dashboard } from './pages/admin/Dashboard'
 
 const Home=lazy(()=> import("./pages/Home"))
 const Login=lazy(()=> import("./pages/Login"))
@@ -9,6 +10,7 @@ const Chat=lazy(()=> import("./pages/Chat"))
 const Group=lazy(()=> import("./pages/Group"))
 const NotFound=lazy(()=> import("./pages/NotFound"))
 const AdminLogin=lazy(()=> import("./pages/admin/AdminLogin"))
+
 
 
 let user=true
@@ -33,11 +35,12 @@ const App = () => {
           }
       />
       <Route path="/admin" element={<AdminLogin/>} />
+      <Route path="/admin/dashboard" element={<Dashboard/>} />
       <Route path='*' element={<NotFound/>}/>
     </Routes>
-    </Suspense>
+  </Suspense>
     
-    </BrowserRouter>
+ </BrowserRouter>
   )
 }
 
