@@ -95,7 +95,7 @@ const closeConfirmDeleteHandler=()=>{
           },
         }}
         sm={4}
-        bgcolor="bisque"
+        
         
       >
        <GroupList myGroups={sampleChats} chatId={chatId}/>
@@ -231,9 +231,10 @@ const GroupList = ({ w = "100%", myGroups = [], chatId }) => (
   <Stack
     width={w}
     sx={{
-      // backgroundImage: "linear-gradient(135deg, #1F2937, #111827)", 
+      backgroundImage: "linear-gradient(135deg, bisque, #111827)", 
       height: "100vh",
       overflow: "auto",
+      
       
     }}
   >

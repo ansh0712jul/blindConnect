@@ -46,6 +46,216 @@ export const sampleChats = [
       _id: "7",
       groupChat: true,
       members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
+    },{
+      avatar: ["/anonymous.jpeg"],
+        name: "anonymous user",
+      _id: "7",
+      groupChat: true,
+      members: ["1", "2"],
     }
   ];
   
@@ -60,6 +270,7 @@ export const sampleChats = [
         bio: "REACt.js, nextjs webRtc GOOGLE ",
       _id: "2",
     },
+    
   ]; 
   
   export const sampleNotifications = [
@@ -91,6 +302,7 @@ export const sampleChats = [
       chat: "chatId",
       createdAt: "2024-11-14T10:41:30.630Z",
     },
+    
   
     {
       attachments: [
