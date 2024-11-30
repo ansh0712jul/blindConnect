@@ -33,7 +33,7 @@ const InputBox = styled("input")`
   background-color: ${grayColor};
 `;
 
-const SearchField = styled("input")`
+ const SearchField = styled("input")`
   padding: 1rem 2rem;
   width: 20vmax;
   border: none;

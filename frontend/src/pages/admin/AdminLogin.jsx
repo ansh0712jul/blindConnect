@@ -22,7 +22,7 @@ const AdminLogin = () => {
 
     return <div 
     style={{
-      background: "#E8E8E8",
+      background: "#FFE4C4",
     }}
   >
     <Container component={"main"}

@@ -63,12 +63,21 @@ import {
       labels,
       datasets: [
         {
-          data: value,
-          label: "Messages",
-          fill: true,
+          data: [1,2,34,6],
+          label: "revenue",
+          fill: "true",
           backgroundColor: purpleLight,
-          borderColor: purple,
+          borderColor: "blue",
         },
+        {
+          data: [1,0,21,8],
+          label: "revenue",
+          fill: "true",
+          backgroundColor: purpleLight,
+          borderColor: "black",
+        },
+        
+        
       ],
     };
   
