@@ -13,7 +13,7 @@ const fileformat = (url="") =>{
 
 }
 
-const transformImage=(url="",width=100)=>{}
+
 
 const getLast7Days = () => {
     const currentDate = moment();
@@ -30,4 +30,4 @@ const getLast7Days = () => {
     return last7Days;
   };
 
-export { fileformat, transformImage , getLast7Days }
+export { fileformat,  getLast7Days }

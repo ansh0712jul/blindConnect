@@ -336,7 +336,7 @@ export const sampleChats = [
   export const dashboardData = {
     users: [
       {
-          name: "anonymous user",
+          email: "xyz@gla.ac.in",
         avatar: "https://www.w3schools.com/howto/img_avatar.png",
         _id: "1",
         username: "john_doe",
@@ -344,45 +344,43 @@ export const sampleChats = [
         groups: 5,
       },
       {
-        name: "anonymous user",
+        email: "abc.sharma1_cs22@gla.ac.in",
         avatar: "https://www.w3schools.com/howto/img_avatar.png",
         _id: "2",
-        username: "john_boi",
+        username: "anonymous",
         friends: 20,
         groups: 25,
       },
     ],
   
-    chats: [
+   chats: [
       {
-        name: "LabadBass Group",
+       email: "abc.sharma1_cs22@gla.ac.in",
         avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         _id: "1",
         groupChat: false,
         members: [
-          { _id: "1", avatar: "https://www.w3schools.com/howto/img_avatar.png" },
-          { _id: "2", avatar: "https://www.w3schools.com/howto/img_avatar.png" },
+          { _id: "1", email: "abc.sharma1_cs22@gla.ac.in" },
+          { _id: "2", email: "xyz.ag_cs22@gla.ac.in" },
         ],
         totalMembers: 2,
         totalMessages: 20,
         creator: {
-            name: "anonymous user",
           avatar: "https://www.w3schools.com/howto/img_avatar.png",
         },
       },
       {
-        name: "L*Da Luston Group",
+        email: "xyz.ag_cs22@gla.ac.in",
         avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         _id: "2",
         groupChat: true,
         members: [
-          { _id: "1", avatar: "https://www.w3schools.com/howto/img_avatar.png" },
-          { _id: "2", avatar: "https://www.w3schools.com/howto/img_avatar.png" },
+          { _id: "1", email: "abc.sharma1_cs22@gla.ac.in" },
+          { _id: "2", email: "xyz.ag_cs22@gla.ac.in" },
         ],
         totalMembers: 2,
         totalMessages: 20,
         creator: {
-            name: "anonymous user",
           avatar: "https://www.w3schools.com/howto/img_avatar.png",
         },
       },

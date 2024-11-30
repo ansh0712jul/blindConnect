@@ -1,6 +1,6 @@
 import React from 'react'
 import {Avatar, AvatarGroup, Box, Stack} from "@mui/material"
-import { transformImage } from '../../lib/features'
+
 
 const AvtarCard = ({avatar=[], max=4}) => {
   return <Stack direction={"row"} spacing={0.5}>
