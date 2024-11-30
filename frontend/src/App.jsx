@@ -12,7 +12,7 @@ const NotFound=lazy(()=> import("./pages/NotFound"))
 const AdminLogin=lazy(()=> import("./pages/admin/AdminLogin"))
 const UserManagement=lazy(()=> import("./pages/admin/UserManagement"))
 const ChatManagement=lazy(()=> import("./pages/admin/ChatManagement"))
-const MessageManagement=lazy(()=> import("./pages/admin/MessageManagement"))
+
 
  
 
@@ -41,7 +41,7 @@ const App = () => {
       <Route path="/admin/dashboard" element={<Dashboard/>} />
       <Route path="/admin/users" element={<UserManagement/>} />
       <Route path="/admin/chats" element={<ChatManagement/>} />
-      <Route path="/admin/messages" element={<MessageManagement/>} />
+     
       <Route path='*' element={<NotFound/>}/>
     </Routes>
   </Suspense>

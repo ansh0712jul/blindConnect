@@ -355,10 +355,10 @@ export const sampleChats = [
   
    chats: [
       {
-       email: "abc.sharma1_cs22@gla.ac.in",
+       name: "myGroup",
         avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         _id: "1",
-        groupChat: false,
+       
         members: [
           { _id: "1", email: "abc.sharma1_cs22@gla.ac.in" },
           { _id: "2", email: "xyz.ag_cs22@gla.ac.in" },
@@ -367,13 +367,14 @@ export const sampleChats = [
         totalMessages: 20,
         creator: {
           avatar: "https://www.w3schools.com/howto/img_avatar.png",
+          email: "xyz.ag_cs22@gla.ac.in",
         },
       },
       {
-        email: "xyz.ag_cs22@gla.ac.in",
+        name: "gladiators",
         avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         _id: "2",
-        groupChat: true,
+       
         members: [
           { _id: "1", email: "abc.sharma1_cs22@gla.ac.in" },
           { _id: "2", email: "xyz.ag_cs22@gla.ac.in" },
@@ -382,6 +383,7 @@ export const sampleChats = [
         totalMessages: 20,
         creator: {
           avatar: "https://www.w3schools.com/howto/img_avatar.png",
+          email: "abc.sharma1_cs22@gla.ac.in",
         },
       },
     ],

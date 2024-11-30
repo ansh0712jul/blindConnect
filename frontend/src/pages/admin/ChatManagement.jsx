@@ -25,18 +25,12 @@ const columns = [
       },
   
     {
-      field: "email",
-      headerName: "Email",
+      field: "name",
+      headerName: "Name",
       headerClassName: "table-header",
       width: 300,
     },
   
-    {
-      field: "groupChat",
-      headerName: "Group",
-      headerClassName: "table-header",
-      width: 100,
-    },
     {
       field: "totalMembers",
       headerName: "Total Members",
@@ -54,11 +48,11 @@ const columns = [
       field: "creator",
       headerName: "Created By",
       headerClassName: "table-header",
-      width: 250,
+      width: 350,
       renderCell: (params) => (
         <Stack direction="row" alignItems="center" spacing={"1rem"}>
           <Avatar alt={params.row.creator.name} src={params.row.creator.avatar} />
-          <span>{params.row.email}</span>
+          <span>{params.row.creator.email}</span>
         </Stack>
       ),
     },
@@ -66,11 +60,17 @@ const columns = [
 const ChatManagement = () => {
     const [rows, setRows]=useState([])
     useEffect(()=>{
-        setRows(dashboardData.chats.map((i) =>({...i,id:i._id,avatar:i.avatar})))
+        setRows(dashboardData.chats.map((i) =>({...i,id:i._id,
+            avatar:i.avatar,
+            creator:{
+                email:i.creator.email,
+                avatar:i.creator.avatar
+            }
+        })))
        
     },[])
   return <AdminLayout>
-    <Table heading={"all users"} columns={columns} rows={rows}/>
+    <Table heading={"All Chats"} columns={columns} rows={rows}/>
   </AdminLayout>
 }
 

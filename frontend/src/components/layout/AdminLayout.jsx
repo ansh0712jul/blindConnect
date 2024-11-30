@@ -47,11 +47,7 @@ import {
       path: "/admin/chats",
       icon: <GroupsIcon />,
     },
-    {
-      name: "Messages",
-      path: "/admin/messages",
-      icon: <MessageIcon />,
-    },
+    
   ];
   
   const Sidebar = ({ w = "100%" }) => {

@@ -35,9 +35,9 @@ const ChatItem = (
           color:"white",
           position: "relative",
           padding: "1rem",
-          borderRadius: "0.rem",
+  
           marginBottom: "0.2rem",
-          border: "2px solid white ",
+         
           
        
           
